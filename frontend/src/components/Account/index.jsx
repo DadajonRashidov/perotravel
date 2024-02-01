@@ -1,12 +1,12 @@
 import Header from "../Navigation"
 
-function Home() {
+function Account() {
     return (
-        <div className="home-wrapper">
+        <div>
             <Header />
             <h1>Hello world</h1>
         </div>
     );
 }
 
-export default Home;
+export default Account;

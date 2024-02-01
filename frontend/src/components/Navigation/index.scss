@@ -1,0 +1,77 @@
+@import "../../Assets/styles/settings";
+
+.Navigation-wrapper {
+    height: 100vh;
+    width: 100%;
+    padding: 27px 160px;
+    background: url("../../Assets/imgs/backgound.png") no-repeat;
+    background-size: cover;
+
+    header {
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+            .links {
+                a {
+                    text-decoration: none;
+                    color: $led;
+                    font-size: 24px;
+                    margin-right: 20px;
+
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-content {
+        margin-top: 273px;
+        display: grid;
+        grid-template-rows: 1fr;
+        color: $led;
+
+        .textn1 {
+            font-size: 72px;
+            font-weight: 700;
+            color: $led;
+            font-family: sans-serif;
+        }
+
+        .textn2 {
+            position: absolute;
+            top: 410px;
+            left: 600px;
+            font-size: 64px;
+            font-weight: 400;
+            font-family: cursive;
+            color: $orange;
+        }
+
+        .textn3 {
+            margin-top: 20px;
+            font-family: Montserrat;
+            font-size: 96px;
+            font-weight: 900;
+            color: transparent;
+            -webkit-text-stroke: 2px $led;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .content-button {
+            button {
+                color: $led;
+                border: none;
+                outline: none;
+                width: 230px;
+                height: 50px;
+                background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+                border-radius: 60px;
+            }
+        }
+    }
+}

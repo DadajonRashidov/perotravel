@@ -1,10 +1,12 @@
 import "./index.scss"
+import Header from "../Navigation"
 function Excurs() {
-    return ( 
+    return (
         <>
-        <h1>Excurs Page</h1>
+            <Header />
+            <h1>Excurs Page</h1>
         </>
-     );
+    );
 }
 
 export default Excurs;
