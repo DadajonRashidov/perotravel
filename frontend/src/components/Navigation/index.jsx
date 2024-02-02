@@ -1,6 +1,10 @@
 import "./index.scss"
 import { Link } from "react-router-dom";
-import Logo from "../../Assets/imgs/Logo.png"
+import Logo from "../../Assets/imgs/Logo.png";
+import Wk from "../../Assets/imgs/icons/wk.png" 
+import Facebook from "../../Assets/imgs/icons/facebook.png" 
+import Inst from "../../Assets/imgs/icons/inst.png" 
+
 
 function Home() {
     return (
@@ -12,7 +16,7 @@ function Home() {
                         <Link to={"/"}>Home</Link>
                         <Link to={"/excurs"}>Excursions</Link >
                         <Link to={"/account"}>Account</Link>
-                    </nav>
+                 </nav>
                 </nav>
             </header>
             <div className="header-content">
@@ -23,6 +27,11 @@ function Home() {
                     <button>
                         К экскурсиям →
                     </button>
+                    <div className="imgs">
+                        <img src={Wk} alt="" width={"32px"}/>
+                        <img src={Inst} alt="" width={"32px"}/>
+                        <img src={Facebook} alt="" width={"32px"}/>
+                    </div>
                 </div>
             </div>
         </div>
