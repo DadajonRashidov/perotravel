@@ -1,0 +1,35 @@
+@use './resets';
+@import './samples';
+
+
+$info: #0099CC;
+$info-t: #33b5e5;
+
+
+$large-screen: 1100px;
+$medium-screen: 500px;
+$small-screen: 650px;
+
+
+
+
+
+%link {
+    @extend %link-style;
+}
+
+%info-btn {
+    @extend %btn;
+    padding: 10px 20px;
+    background-color: $info;
+    border: none;
+    color: snow;
+    border-radius: 30px;
+    width: 300px;
+    height: 45px;
+
+    &:hover {
+        background-color: lighter(lightblue, 10%);
+        transform: scale(0.90);
+    }
+}
