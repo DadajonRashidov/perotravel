@@ -8,10 +8,11 @@ function AllComponents(props) {
 
     return (
         <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
-            <Route path='Excurs' element={<Excurs />} />
-            <Route path='Account' element={<Account />} />
-            <Route path='Home' element={<Navigation />} />
+            <Route path='/' element={<Navigation />} >
+                <Route path="home" index element={<Home />} />
+                <Route path='Excurs' element={<Excurs />} />
+                <Route path='Account' element={<Account />} />
+            </Route>
         </Routes >
     );
 }

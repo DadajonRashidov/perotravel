@@ -1,10 +1,9 @@
 import "./index.scss"
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Logo from "../../Assets/imgs/Logo.png";
-import Wk from "../../Assets/imgs/icons/wk.png" 
-import Facebook from "../../Assets/imgs/icons/facebook.png" 
-import Inst from "../../Assets/imgs/icons/inst.png" 
-
+import Wk from "../../Assets/imgs/icons/wk.png"
+import Facebook from "../../Assets/imgs/icons/facebook.png"
+import Inst from "../../Assets/imgs/icons/inst.png"
 
 function Home() {
     return (
@@ -13,10 +12,10 @@ function Home() {
                 <nav>
                     <div className="logo"><img src={Logo} alt="" width={"50px"} /></div>
                     <nav className="links">
-                        <Link to={"/"}>Home</Link>
+                        <Link to={"/home"}>Home</Link>
                         <Link to={"/excurs"}>Excursions</Link >
                         <Link to={"/account"}>Account</Link>
-                 </nav>
+                    </nav>
                 </nav>
             </header>
             <div className="header-content">
@@ -28,11 +27,15 @@ function Home() {
                         К экскурсиям →
                     </button>
                     <div className="imgs">
-                        <img src={Wk} alt="" width={"32px"}/>
-                        <img src={Inst} alt="" width={"32px"}/>
-                        <img src={Facebook} alt="" width={"32px"}/>
+                        <img src={Wk} alt="" width={"32px"} />
+                        <img src={Inst} alt="" width={"32px"} />
+                        <img src={Facebook} alt="" width={"32px"} />
                     </div>
                 </div>
+         
+            </div>
+            <div className="outlet">
+                <Outlet />
             </div>
         </div>
     );
