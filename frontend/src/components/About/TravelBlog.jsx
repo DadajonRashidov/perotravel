@@ -19,8 +19,9 @@ function TravelBlog() {
             items: 2
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 600, min: 464 },
             items: 1
+
         }
     };
 

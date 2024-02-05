@@ -50,24 +50,22 @@ function ContactsForm() {
                 <h3>Остались вопросы?</h3>
                 <span>Оставь заявку и мы ответим</span>
                 <div className="div">
-                    <div className="hr">
+              
                         <input type="text" placeholder='Имя'
                             onChange={fireSetForm} required name='name'
                         />
 
-                    </div>
-                    <div className="hr">
+                
+                
                         <input type="text" placeholder='Номер Телефона'
                             onChange={fireSetForm} required name='number'
                         />
 
-                    </div>
-                    <div className="hr">
+               
                         <input type="text" placeholder='Почта'
                             onChange={fireSetForm} required name='email'
                         />
 
-                    </div>
 
                 </div>
                 <button className='info-btn'>Подать Заявку</button>

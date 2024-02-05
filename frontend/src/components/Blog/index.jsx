@@ -12,8 +12,8 @@ function Blog() {
      const navigate = useNavigate()
 
      const goToTeamsHash = () => {
-         navigate('/third')
- 
+          navigate('/third')
+
      }
 
      return (
@@ -43,7 +43,7 @@ function Blog() {
                               <img src={geolocationImg} alt="" width={23} height={28} />
                          </div>
                          <div className="input-2">
-                              <input type="text" name="" value={"2022-07-16"} id="date" />
+                              <input type="datetime-local" name="" id="" />
                               <img src={calendarImg} alt="" width={23} height={23} />
                          </div>
                          <div className="input-3">
@@ -76,39 +76,39 @@ function Blog() {
 
                                         <div>
                                              <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"2 чел."} />
+                                             <input type="text" value={"3 чел."} />
+                                             <input type="text" value={"4 чел."} />
+                                             <input type="text" value={"5 чел."} />
+                                             <input type="text" value={"6 чел."} />
+                                             <input type="text" value={"7 чел."} />
+                                             <input type="text" value={"8 чел."} />
+                                             <input type="text" value={"9 чел."} />
+                                             <input type="text" value={"10 чел."} />
+                                             <input type="text" value={"Больше 10 чел."} />
                                         </div>
                                    </div>
                                    <hr />
                                    <div className="radio-input">
                                         <b>Место</b>
                                         <div>
-                                             <input type="radio" name="city" checked />
+                                             <input type="checkbox" name="city" />
                                              <label htmlFor="">Абхазия</label>
                                         </div>
                                         <div>
-                                             <input type="radio" />
+                                             <input type="checkbox" />
                                              <label htmlFor="">Америка</label>
                                         </div>
                                         <div>
-                                             <input type="radio" />
+                                             <input type="checkbox" />
                                              <label htmlFor="">Сочи</label>
                                         </div>
                                         <div>
-                                             <input type="radio" />
+                                             <input type="checkbox" />
                                              <label htmlFor="">Адлер</label>
                                         </div>
                                         <div>
-                                             <input type="radio" />
+                                             <input type="checkbox" />
                                              <label htmlFor="">Адлер</label>
                                         </div>
                                    </div>

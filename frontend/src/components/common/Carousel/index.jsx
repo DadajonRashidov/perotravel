@@ -22,7 +22,7 @@ function Arrow(props) {
 
 
 function CarouselComponent() {
-     
+
     var settings = {
         dots: true,
         infinite: true,
@@ -62,7 +62,7 @@ function CarouselComponent() {
                         <img src={slid1} width={200} alt="" />
                         <div className="text-slides">
                             <b>Иван Иванов</b>
-                           
+
                             <br />
                             <br />
                             <br />

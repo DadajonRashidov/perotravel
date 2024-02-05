@@ -168,9 +168,11 @@
             }
 
         }
-            h2 {
-                width: 500px;
-            }
+
+        h2 {
+            width: 500px;
+        }
+
         span {
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bolder;
@@ -182,7 +184,7 @@
             margin-bottom: 30px;
             font-size: 30px;
             color: rgb(67, 208, 255);
-            
+
         }
 
         p {
@@ -203,39 +205,47 @@
     }
 
 
-        .inputs-wrapper-img {
+    .inputs-wrapper-img {
+        position: relative;
+        top: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .third-inputs {
+            display: flex;
+            flex-direction: column;
             position: relative;
-            top: 1000px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            top: 200px;
+            padding: 80px;
 
-            .third-inputs{
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                top: 200px;
-                padding: 80px;
+            button {
+                @extend %info-btn;
+            }
 
-                button {
-                    @extend %info-btn;
-                }
+            input {
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                background-color: #0000001A;
 
-                input {
-                    padding: 10px;
-                    border-radius: 5px;
-                    border: none;
-                    outline: none;
-                    background-color: #0000001A;
 
-                
-                }
             }
         }
 
-        .third-footer {
-            position: relative;
-            top: 1000px;
-           
-        }
+    }
 
+    .third-footer {
+        position: relative;
+        top: 1000px;
+
+    }
+
+}
+
+@media (max-width: 700px) {
+    .carousel3 {
+        background-color: red($color: #000000);
+
+    }
 }

@@ -6,24 +6,24 @@ function Calendar() {
             <div className="calendar-wrapper">
                 <h2>Ноябрь 2021</h2>
                 <div className="weeks">
-                    <b>ПН</b> 
-                    <b>ВТ</b> 
-                    <b>СР</b> 
-                    <b>ЧТ</b> 
-                    <b>ПТ</b> 
-                    <b>СБ</b> 
-                    <b>ВС</b> 
+                    <b>ПН</b>
+                    <b>ВТ</b>
+                    <b>СР</b>
+                    <b>ЧТ</b>
+                    <b>ПТ</b>
+                    <b>СБ</b>
+                    <b>ВС</b>
 
 
-                      
-                         
-                        
-                        
-                        
-                        
-                        
-                        
-                   
+
+
+
+
+
+
+
+
+
                 </div>
                 <div className="days">
                     <span>1</span>
@@ -56,7 +56,7 @@ function Calendar() {
                     <span>28</span>
                     <span>29</span>
                     <span>30</span>
-                 </div>
+                </div>
             </div>
         </>
     );

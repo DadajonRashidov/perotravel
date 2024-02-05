@@ -15,17 +15,19 @@ function Values() {
         <>
             <div className="value-wrapper">
 
-                    <h3  > Виды экскурсий</h3>
+                <h3>Виды экскурсий</h3>
                 <div className="value-content">
                     {
                         valuesDB.map((item, index) => {
                             return (
-                                <ValueItem
-                                    key={index}
-                                    image={imgs[index]}
-                                    title={item.title}
-                                    subtitle={item.subtitle}
-                                />
+                             
+                                    <ValueItem
+                                        key={index}
+                                        image={imgs[index]}
+                                        title={item.title}
+                                        subtitle={item.subtitle}
+                                    />
+            
                             )
                         })
                     }
@@ -34,7 +36,7 @@ function Values() {
                     <p>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
                     <br />
                     <button className='info-btn'>
-                        <Link to={"/blog"}> К Экскурсиям</Link>
+                        <Link to={"/blog"}> К Экскурсиям →</Link>
                     </button>
                 </div>
             </div >
